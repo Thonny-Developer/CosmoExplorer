@@ -13,49 +13,81 @@
             <ul>
                 <li><a href="#about">О проекте</a></li>
                 <li><a href="#planets">Планеты</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#lesson">Записаться</a></li>
             </ul>
         </nav>
         <div class="hero-content">
             <h2>Открой Вселенную</h2>
             <p>Интерактивное путешествие по космосу</p>
+            <br>
+            <br>
+            <br>
             <a href="#planets" class="btn">Начать исследование</a>
         </div>
     </header>
 
     <section id="about">
         <h2>О проекте</h2>
-        <p>CosmoExplorer — это интерактивный веб-проект, где вы сможете изучить планеты, галактики и космические явления в современном, красивом формате.</p>
+        <p>CosmoExplorer — это проект где вы сможете изучить планеты, галактики и космические явления</p>
     </section>
 
     <section id="planets" class="planet-grid">
-        <div class="planet-card">
+        <div class="planet-card" 
+            data-name="Земля" 
+            data-img="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"
+            data-info="Земля — третья планета от Солнца и единственная известная планета, на которой существует жизнь. Её поверхность состоит примерно на 71% из воды, что делает её уникальной среди известных нам планет. Атмосфера Земли содержит азот, кислород и другие газы, обеспечивая возможность дыхания. На Земле есть горы, океаны, пустыни и леса, которые формируют богатое биоразнообразие. Средняя температура поверхности около 15°C, но варьируется в зависимости от региона. У Земли один естественный спутник — Луна, влияющий на приливы и отливы. Планета вращается вокруг своей оси за 24 часа и совершает оборот вокруг Солнца за 365 дней. Человечество активно исследует Землю и космос с помощью спутников, телескопов и экспедиций.">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Земля">
             <h3>Земля</h3>
         </div>
-        <div class="planet-card">
+
+        <div class="planet-card" 
+            data-name="Марс" 
+            data-img="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg"
+            data-info="Марс — четвёртая планета от Солнца, известная как Красная планета из-за содержания оксида железа на поверхности. Его атмосфера разрежена и состоит в основном из углекислого газа. На Марсе находятся самые высокие вулканы и самые глубокие каньоны в Солнечной системе, включая Олимп — вулкан высотой более 21 км. Температуры на планете колеблются от -125°C до 20°C. У Марса два маленьких спутника — Фобос и Деймос. Учёные активно исследуют Марс с помощью марсоходов и орбитальных станций, чтобы выяснить, была ли когда-то на нём жизнь. Недавние миссии обнаружили следы замёрзшей воды и сезонных потоков соли. В будущем Марс рассматривается как потенциальное место для колонизации.">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Марс">
             <h3>Марс</h3>
         </div>
-        <div class="planet-card">
+
+        <div class="planet-card" 
+            data-name="Юпитер" 
+            data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jupiter%2C_image_taken_by_NASA%27s_Hubble_Space_Telescope%2C_June_2019_-_Edited.jpg/330px-Jupiter%2C_image_taken_by_NASA%27s_Hubble_Space_Telescope%2C_June_2019_-_Edited.jpg"
+            data-info="Юпитер — пятая планета от Солнца и самая большая в Солнечной системе. Его масса в 318 раз больше массы Земли, а диаметр превышает 142 000 км. Юпитер состоит в основном из водорода и гелия, и не имеет твёрдой поверхности. Одной из самых узнаваемых особенностей является Большое Красное Пятно — гигантский ураган, бушующий на протяжении более 300 лет. У Юпитера как минимум 79 спутников, крупнейшие из которых — Ио, Европа, Ганимед и Каллисто. Магнитное поле Юпитера самое сильное среди всех планет, а его радиационные пояса представляют опасность для космических аппаратов. Благодаря своей массе Юпитер играет роль космического щита, притягивая кометы и астероиды.">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jupiter%2C_image_taken_by_NASA%27s_Hubble_Space_Telescope%2C_June_2019_-_Edited.jpg/330px-Jupiter%2C_image_taken_by_NASA%27s_Hubble_Space_Telescope%2C_June_2019_-_Edited.jpg" alt="Юпитер">
             <h3>Юпитер</h3>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Связаться с нами</h2>
+    <section id="lesson">
+        <h2>Записаться на урок</h2>
         <form>
             <input type="text" placeholder="Ваше имя" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Сообщение" required></textarea>
-            <button type="submit" class="btn">Отправить</button>
+            <input type="email" placeholder="Ваш Email" required>
+            <select required>
+                <option value="">Выберите планету</option>
+                <option value="Земля">Земля</option>
+                <option value="Марс">Марс</option>
+                <option value="Юпитер">Юпитер</option>
+            </select>
+            <textarea placeholder="Ваши вопросы или пожелания" required></textarea>
+            <button type="submit" class="btn">Отправить заявку</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2025 CosmoExplorer</p>
+        <p>© 2023 - thonny_dev</p>
     </footer>
+
+    <!-- Модальное окно -->
+    <div id="planetModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+                <p id="modalInfo"></p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
